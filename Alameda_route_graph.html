@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_83c7c22bd7f132391dbe1fd62019457f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_83c7c22bd7f132391dbe1fd62019457f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_83c7c22bd7f132391dbe1fd62019457f = L.map(
+                "map_83c7c22bd7f132391dbe1fd62019457f",
+                {
+                    center: [37.674112, -121.971002],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: true,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b79105265245ac26dbe9260a1ccb190d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b79105265245ac26dbe9260a1ccb190d.addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var circle_marker_4284404ba915908b0353ea1232022003 = L.circleMarker(
+                [37.695409, -122.077991],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_67e7d04a448979883c75585f17f19f81 = L.marker(
+                [37.695409, -122.077991],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_61b8d1f0bf548dc5658401c8c639aa25 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eBus Stop #50773/28-San Leandro Bart\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_67e7d04a448979883c75585f17f19f81.setIcon(div_icon_61b8d1f0bf548dc5658401c8c639aa25);
+        
+    
+            var circle_marker_9b2f8133f37d97e11eacc6f1b91fcb6d = L.circleMarker(
+                [37.552155, -122.063208],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_440eacf7dab937141cac07689a24eb74 = L.marker(
+                [37.552155, -122.063208],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_a6ec033316c5c545ce1694268eaf62f6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eLogitech\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_440eacf7dab937141cac07689a24eb74.setIcon(div_icon_a6ec033316c5c545ce1694268eaf62f6);
+        
+    
+            var circle_marker_b12e189603628a4050490d684b4d9748 = L.circleMarker(
+                [37.708072, -121.924819],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_3b01034c5d7c2f633459193c3a145001 = L.marker(
+                [37.708072, -121.924819],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_efcb622dda4400eb260f55f33f21016e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eSpeeDee Oil Change and Tune-Up\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_3b01034c5d7c2f633459193c3a145001.setIcon(div_icon_efcb622dda4400eb260f55f33f21016e);
+        
+    
+            var circle_marker_f6c57e19a25a078a0fffec4962d410c6 = L.circleMarker(
+                [37.411732, -122.014626],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_e3073dea09600c5ca7f664d4a729151e = L.marker(
+                [37.411732, -122.014626],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_6e11bcafdab42df30b2558bbc50e71a6 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eEnvie Interactive\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_e3073dea09600c5ca7f664d4a729151e.setIcon(div_icon_6e11bcafdab42df30b2558bbc50e71a6);
+        
+    
+            var circle_marker_f9b40feeba6ba96a000793454a6d7a31 = L.circleMarker(
+                [37.656344, -122.071653],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_811e57289c6c8bfb606ad17028710391 = L.marker(
+                [37.656344, -122.071653],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_752056f36aa011b9a8f29eca20109d29 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eCalifornia Express Motors\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_811e57289c6c8bfb606ad17028710391.setIcon(div_icon_752056f36aa011b9a8f29eca20109d29);
+        
+    
+            var circle_marker_3ba7dc91396d06a27bd064b9346ac5de = L.circleMarker(
+                [37.654885, -122.055788],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_86828623eee3eb2f63914a8b25b20905 = L.marker(
+                [37.654885, -122.055788],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_1f2bd212138792e045d6d8f65cb9f3c9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eUniversity Union\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_86828623eee3eb2f63914a8b25b20905.setIcon(div_icon_1f2bd212138792e045d6d8f65cb9f3c9);
+        
+    
+            var circle_marker_f5dfc6170da7a5b11421493c1d074f28 = L.circleMarker(
+                [37.693297, -122.066176],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_406273f026952ed1417f5032ef76254d = L.marker(
+                [37.693297, -122.066176],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_2ebabac788eb8c6f385eecf6dfb4de8d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eSpeedee Oil Change \u0026 Tune Up\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_406273f026952ed1417f5032ef76254d.setIcon(div_icon_2ebabac788eb8c6f385eecf6dfb4de8d);
+        
+    
+            var circle_marker_8e03058a1493c93d909f74d4b4ef45ab = L.circleMarker(
+                [37.692118, -121.927759],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_ce20b24bbf23c81515b105a02f3191b2 = L.marker(
+                [37.692118, -121.927759],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_e9ffb5437bb0665f4f26913afc90cab7 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eMen\u0027s Wearhouse\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_ce20b24bbf23c81515b105a02f3191b2.setIcon(div_icon_e9ffb5437bb0665f4f26913afc90cab7);
+        
+    
+            var circle_marker_060a4e17c35d1db4a8d7017ef390294d = L.circleMarker(
+                [37.698831, -121.917708],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_cff8612456e9566e8560cd4cddb3f2db = L.marker(
+                [37.698831, -121.917708],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_6d54cabb417dd2db3387acdf3f233c8a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eUp 2 Speed Sports Therapy\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_cff8612456e9566e8560cd4cddb3f2db.setIcon(div_icon_6d54cabb417dd2db3387acdf3f233c8a);
+        
+    
+            var circle_marker_9c15fdd90475b905bfb9de0fa24ba93f = L.circleMarker(
+                [37.695814, -121.932341],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_9f56af2fc4fb7fe783405061d5e5d080 = L.marker(
+                [37.695814, -121.932341],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_a896258c0eaa51f48981575d462e0d6b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eSafeAmerica Credit Union\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_9f56af2fc4fb7fe783405061d5e5d080.setIcon(div_icon_a896258c0eaa51f48981575d462e0d6b);
+        
+    
+            var circle_marker_7d2c0945f16d26cb93265dc73a94a5f8 = L.circleMarker(
+                [37.696829, -122.139635],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_a527dcbd46830a7f7645773b00ee88b0 = L.marker(
+                [37.696829, -122.139635],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_9e40fbf8f342335be9001c11a204df88 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eRed Apple Pizza\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_a527dcbd46830a7f7645773b00ee88b0.setIcon(div_icon_9e40fbf8f342335be9001c11a204df88);
+        
+    
+            var circle_marker_cd6fcb2205320b87deaa83bca6972e5e = L.circleMarker(
+                [37.581319, -122.017075],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_f56028616efd998f518f345d2653daab = L.marker(
+                [37.581319, -122.017075],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_6aaab3b9f8d401888dff2abb4ef550f5 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eMy Union City Plumber Hero\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_f56028616efd998f518f345d2653daab.setIcon(div_icon_6aaab3b9f8d401888dff2abb4ef550f5);
+        
+    
+            var circle_marker_0c3aa5ae4295037bd720879569af5c1f = L.circleMarker(
+                [37.661614, -121.903984],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_4911889097f98a6c02abd91e49966c72 = L.marker(
+                [37.661614, -121.903984],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_1c3ee68a5204a645598b6a6f70b5a94b = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eSimbol Materials\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_4911889097f98a6c02abd91e49966c72.setIcon(div_icon_1c3ee68a5204a645598b6a6f70b5a94b);
+        
+    
+            var circle_marker_8ea1a3c3077bd6f4a40f370826df94e7 = L.circleMarker(
+                [37.769199, -122.238094],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_2c45bac4319e7585910db23def2178c8 = L.marker(
+                [37.769199, -122.238094],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_7098c3294103f42144310b4889911618 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eTint-N-Sound\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_2c45bac4319e7585910db23def2178c8.setIcon(div_icon_7098c3294103f42144310b4889911618);
+        
+    
+            var circle_marker_fa8cc67faa2e4f7da5752619cceb89e9 = L.circleMarker(
+                [37.698278, -121.919474],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_2c0fc2ea4f32fbb3a0b7e926c5ab14a0 = L.marker(
+                [37.698278, -121.919474],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_01b537104977ebc94ccb9dc6c3a3df6a = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eDesign Energy Group\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_2c0fc2ea4f32fbb3a0b7e926c5ab14a0.setIcon(div_icon_01b537104977ebc94ccb9dc6c3a3df6a);
+        
+    
+            var circle_marker_bccdd22e29b481fba60148183d5fa4f9 = L.circleMarker(
+                [37.670639, -122.087372],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_2e583515886775bcefab4f967fc7060e = L.marker(
+                [37.670639, -122.087372],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_fdfec2a14dda357aa889b469e32ae88e = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eHayward BART Garage\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_2e583515886775bcefab4f967fc7060e.setIcon(div_icon_fdfec2a14dda357aa889b469e32ae88e);
+        
+    
+            var circle_marker_c494c69e2ef73afc523e337b63ec80b0 = L.circleMarker(
+                [37.678241, -122.09081],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_5ca144f2a3df6749befe05363b1a577d = L.marker(
+                [37.678241, -122.09081],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_0d18a9b7788f697b4da0d05a60339956 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003ePhantom Motors\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_5ca144f2a3df6749befe05363b1a577d.setIcon(div_icon_0d18a9b7788f697b4da0d05a60339956);
+        
+    
+            var circle_marker_5fc79f49c78827d9b731ba78b71817d1 = L.circleMarker(
+                [37.807695, -122.265135],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_7f7ea1b295f28f81142718c17845716a = L.marker(
+                [37.807695, -122.265135],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_a40bf4cb07fb3834c167e96277bcf4ec = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eRandall E. Strauss\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_7f7ea1b295f28f81142718c17845716a.setIcon(div_icon_a40bf4cb07fb3834c167e96277bcf4ec);
+        
+    
+            var circle_marker_71291fa624b4a97c5ac3313811141e7b = L.circleMarker(
+                [37.663021, -121.899895],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_4633412bf58b38a26b8be3db8b62f1aa = L.marker(
+                [37.663021, -121.899895],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_66c42a701a5e2781507ba7515303912d = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eEmcor Integrated Solutions\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_4633412bf58b38a26b8be3db8b62f1aa.setIcon(div_icon_66c42a701a5e2781507ba7515303912d);
+        
+    
+            var circle_marker_8c84de28a85a83f09bfd04705603ed73 = L.circleMarker(
+                [37.694429, -122.051597],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_be64740ba718e86ca9b848661c97e11d = L.marker(
+                [37.694429, -122.051597],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_2946edc6627e4f3cb81558289d0d8126 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003ePho Play\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_be64740ba718e86ca9b848661c97e11d.setIcon(div_icon_2946edc6627e4f3cb81558289d0d8126);
+        
+    
+            var poly_line_93b17ccdd729fcdc4318eddfe93b5b59 = L.polyline(
+                [[37.677887, -122.0909633], [37.6778163, -122.0910678], [37.6774042, -122.0916061], [37.6772944, -122.0917505], [37.677279, -122.0917719], [37.6772349, -122.0918288]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var poly_line_9e96f4b1fe6442e0fe80fd82a01cd9fa = L.polyline(
+                [[37.6772349, -122.0918288], [37.6771872, -122.0917732], [37.6771773, -122.0917576], [37.6766961, -122.091163], [37.6766052, -122.0910684], [37.6765253, -122.0909852], [37.6763637, -122.090836], [37.6762487, -122.0907507], [37.676169, -122.090699], [37.6756606, -122.0903697]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var poly_line_36d7b16c6bdc973bc4bd17c31296aea3 = L.polyline(
+                [[37.6756606, -122.0903697], [37.6755496, -122.0902981], [37.6752625, -122.0901133], [37.6750663, -122.0899875], [37.6744555, -122.0895923], [37.6743771, -122.0895418], [37.6741619, -122.0894029], [37.6738911, -122.0892283], [37.6738778, -122.0892197], [37.6738155, -122.0891806]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var poly_line_6b1d4005b1404bdd3f20632b000eeaf6 = L.polyline(
+                [[37.6738155, -122.0891806], [37.6737698, -122.0891499], [37.6737552, -122.0891405], [37.673405, -122.0889139], [37.6726946, -122.0884544]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var poly_line_bc9af18134b1612dd23c470b54e4bf4c = L.polyline(
+                [[37.6726946, -122.0884544], [37.6721874, -122.0881294], [37.6721246, -122.0880892], [37.6720862, -122.0880631], [37.6719185, -122.0879572], [37.6717912, -122.0878756]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var poly_line_08150443bbc4fda2ba4a0313a526752b = L.polyline(
+                [[37.6717912, -122.0878756], [37.671696, -122.0878113], [37.6715066, -122.087701], [37.6710455, -122.0874087], [37.6709605, -122.0873523], [37.6709449, -122.087343], [37.670858, -122.087285]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 10}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            map_83c7c22bd7f132391dbe1fd62019457f.fitBounds(
+                [[37.670858, -122.0918288], [37.677887, -122.087285]],
+                {}
+            );
+        
+    
+            var circle_marker_dc412df71c1297c307849003b690e133 = L.circleMarker(
+                [37.669748, -122.087035],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2, "stroke": true, "weight": 5}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var marker_cd78fc825399036ce9828d4f326a7f8b = L.marker(
+                [37.669748, -122.087035],
+                {}
+            ).addTo(map_83c7c22bd7f132391dbe1fd62019457f);
+        
+    
+            var div_icon_7f505662d98f9a8ccd58330a4bdb3fa3 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 7pt\"\u003eHayward BART Station\u003c/div\u003e", "iconAnchor": [5, 14], "iconSize": [20, 20]});
+            marker_cd78fc825399036ce9828d4f326a7f8b.setIcon(div_icon_7f505662d98f9a8ccd58330a4bdb3fa3);
+        
+    
+            map_83c7c22bd7f132391dbe1fd62019457f.fitBounds(
+                [[37.411732, -122.265135], [37.807695, -121.899895]],
+                {}
+            );
+        
+</script>
+</html>
